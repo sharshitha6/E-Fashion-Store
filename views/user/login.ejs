@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs')%>
+    <div class="newformcontent">
+        <form action='/users/login' method='POST'>
+                <div class="formdiv">
+                   <label for="email" class="formlabel">Email:</label>&nbsp;
+                   <input type="email" name="email" placeholder="email" id="email" required><br><br>
+                </div>
+                <div class="formdiv">
+                   <label for="password" class="formlabel">Password:</label>&nbsp;
+                   <input type="password" name="password" placeholder="password" id="password" required><br><br>
+                </div>
+                <div class="formdivlogin">
+                    <span><button type = "Submit" class="loginbtn">Login</button></span>
+                    <span>Not a member?</span>
+                    <span><a href=/users/signup><b>Signup</b></a></span>
+                 </div>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs')%>
+    

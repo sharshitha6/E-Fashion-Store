@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs') %>
+<div class = "tradescontent">
+  <div class="row">
+  <%if(items.length){%>
+     <h1>Fashion store</h1>
+     <%let categories = items.map(value => value.category);%>  
+     <%categories = Array.from(new Set(categories));%>
+    <%for(var i = 0;i<categories.length;i++){%>
+      <div class="column"> 
+        <h2><%= categories[i]%></h2><br>
+        <img class ="clothes" src="https://cdn1.careeraddict.com/uploads/article/60462/Business_meeting_dress_code_attire.png " alt="Clothes">
+        <ul class="types">
+      <%for(var j=0;j<items.length;j++){%>
+        <%if(items[j].category === categories[i]){%>
+         <li><a class="anchorTag" href="/items/<%= items[j].id%>"><p><%= items[j].title%></p></a></li>
+        <%}%>
+      <%}%></ul>
+        </div>
+    <%}%>
+        <%}else{%>
+        <p class = "empty">There are no products to display</p>
+        <%}%>       
+        </div>
+</div>
+<%- include('../partials/footer.ejs')%>
+
+
+
+
+      

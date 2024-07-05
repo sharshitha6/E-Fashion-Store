@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs')%>
+<div class = "profilecontent2">
+<h2>Manage offer</h2>
+<table class = "profiletable">
+    <tr>
+      <th>Offer For You</th>
+      <th>Your Item</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td> <a href="/items/<%= item.id%>"><p><%= item.title%></a></p></td>
+      <td> <a href="/"><p><%= item.offertitle%></p></a></td>
+      <td>
+        <form class="profileform">
+            <button class="tradebuttons" type="submit" formmethod="POST" formaction = "/items/<%= offer.id%>/offer?_method=DELETE">Cancel Offer</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+<%- include('../partials/footer.ejs')%>

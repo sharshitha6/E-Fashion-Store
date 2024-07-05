@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+
+hr{
+color: white;
+width: 100%;
+position: relative;
+bottom: 10px;
+} 
+
+header{
+    background-color: #00A8E3;
+    width: 100%;
+    border: 20px solid #00A8E3;
+    color: white;
+    font-weight: bold;
+}
+
+#fashionicon{
+    height: 100px;
+    width:100px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+#trades {
+    position: absolute;
+    top: 133px;
+    left: 35px;
+    color: white;
+    text-decoration: none;
+} 
+
+#startTrading{
+    position: absolute;
+    top: 50px;
+    right: 205px;
+    color: white;
+    font-weight: bold;
+}
+#login{
+    position: absolute;
+    top: 50px;
+    right: 145px;
+    color: white;
+    font-weight: bold;
+}
+
+.loginbtn{
+    margin-right:185px;
+	background-color:#00A8E3;
+	color: white;
+	width:150px;
+	height:32px;
+    font-size:15px;
+}
+
+.formdivsignup{
+    margin-top: 30px; 
+    font-size: 17.5px;  
+    padding-bottom:78px;
+}
+
+.formdivlogin{
+    margin-top: 30px; 
+    font-size: 17.5px;  
+    padding-bottom:135px;
+}
+
+#signup{
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    color: white;
+    font-weight: bold;
+}
+
+#profile{
+    position: absolute;
+    top: 50px;
+    right: 140px;
+    color: white;
+    font-weight: bold;
+}
+
+#logout{
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    color: white;
+    font-weight: bold;       
+}
+
+body{
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.content{
+    text-align: center;
+    padding: 80px;
+    color: black;
+}
+.content p{
+    font-size: 18px;
+    font-style: italic;
+}   
+
+.profilecontent{
+    text-align: center;
+    padding: 135px;
+    padding-bottom:0px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.profilecontent1{
+    text-align: center;
+    padding-left: 135px;
+    padding-right: 135px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.profilecontent2{
+    text-align: center;
+    padding: 135px;
+    color: black;
+    text-decoration: none;   
+}
+
+#HomeImage{
+    height:500px;
+    width:850px;
+}
+
+.tradescontent{
+    text-align: center;
+    color: black;
+    padding: 60px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tradescontent p{
+    font-size: 18px;
+    font-style: italic;
+}   
+
+.contactul{
+    list-style-type: none;
+    padding-bottom:42px;
+}
+
+footer{
+    bottom: 0px;
+    position: absolute;
+    background-color: #00A8E3;
+    width: 99%;
+    border: 20px solid #00A8E3;
+    color: white;
+    font-weight: bold;
+}
+#copy{
+    position: relative;
+    left:10px;
+}
+#about{
+    position: relative;
+    left: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contact{
+    position: relative;
+    left: 60px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#social{
+	float:right;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.column { 
+  float: left; 
+  display: block;
+  width: 33.33%;
+  padding:20px;
+  padding-bottom:100px;
+  height: 500px; 
+  margin-bottom:100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.row{
+  position: relative;
+}
+
+
+.clothes{
+    height:250px;
+    width:250px;   
+}
+
+.types{
+    list-style-type:none;
+    text-align:left;
+    padding-left:120px; 
+    padding-top:10px;
+    margin-bottom: 60px;
+}
+
+.anchorTag{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+form{
+  padding-top: 50px;
+  padding-left: 480px;
+  margin-top:40px;
+  padding-bottom:40px;
+}
+
+.empty{
+    padding: 129px;
+}
+
+.formdiv{
+    margin-bottom: 8px;  
+    font-size:17px;    
+}
+
+.formlabel{
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+.newformcontent input{
+        width:350px;
+        height:30px;
+}
+
+.CasualImage{
+    width: 250px;
+    height: 300px;
+    margin-top: 10px
+}
+
+.tradebuttons{  
+    background-color:#00A8E3;
+	color: white;
+	width:100px;
+	height:30px;
+    left:-480px;
+    top:-100px;
+    position:relative;
+    
+}
+
+.editbuttons{  
+    background-color:green;
+	color: white;
+	width:100px;
+	height:30px;
+    left:-480px;
+    top:-100px;
+    position:relative;
+    
+}
+
+.deletebuttons{  
+    background-color:red;
+	color: white;
+	width:100px;
+	height:30px;
+    left:-480px;
+    top:-100px;
+    position:relative;
+    
+}
+
+#tradedesc{
+    padding: 50px;
+    position: relative;
+    text-align: left;
+    top:-20px;
+    margin-left:100px;
+}
+
+#tradedesc p{
+    font-size: 18px;
+}
+
+.btncls{
+	margin-left:450px;
+	background-color:#00A8E3;
+	color: white;
+	width:100px;
+	height:30px
+}
+
+.errorcontent{
+    padding: 171px;
+}
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .error {
+    background: rgba(255, 102, 51, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .profiletable {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin: 20px;
+    border: 2px solid;
+    position: relative;
+    /* left:80px; */
+  }
+
+  .profiletable a{
+  text-decoration: none;
+  color: black;
+  }
+
+  td, th {
+    border: 2px solid black;
+    padding:8px;
+    text-align:left;
+}
+
+.profileform{
+    padding-left: 490px;
+    margin-top: 40px;
+    margin-bottom:-150px;
+}

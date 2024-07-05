@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <Title>
+      Fashion World
+   </Title>
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header>
+      <a href='/'>
+         <img id="fashionicon"
+            src="https://img.favpng.com/17/21/15/online-shopping-banner-png-favpng-Gff1XdDPs58mvguiAY6scu8cj.jpg"
+            alt="Clothes">
+      </a>
+      <hr>
+      <a href="/items" id="trades"> <span> Menu </span></a>
+      <div id="links">
+         <a href="/items/new"> <span id="startTrading"> Start Shopping! </span></a>
+         <% if(!user){ %>
+            <a href="/users/signup"> <span id="signup">Signup</span></a>
+            <a href="/users/login"> <span id="login">Login</span></a>
+            <% } else { %>
+               <a href='/users/profile'><span id="profile">profile</span></a>
+               <a href='/users/logout'><span id="logout">Logout</span></a>
+               <% } %>
+      </div>
+   </header>
+
+   <% if(errorMessages.length > 0) {%>
+      <% errorMessages.forEach(message=>{%>
+         <div class='error'>
+            <%=message%>
+         </div>
+         <%});%>
+            <%}%>
+
+   <% if(successMessages.length > 0) {%>
+      <% successMessages.forEach(message=>{%>
+         <div class='success'>
+            <%=message%>
+            </div>
+            <%});%>
+               <%}%>

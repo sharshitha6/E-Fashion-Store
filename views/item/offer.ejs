@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+<div class = "profilecontent2">
+  <h2>Your Trades</h2>
+  <%if(items.length){%>
+  <table class = "profiletable">
+    <tr>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <%items.forEach(item=>{%>
+      <%if(item.status === "Available"){%>
+    <tr>
+      <td><a href="/items/<%= item.id%>"> <p><%= item.title%></p></a></td>
+      <td><%= item.category%></td>
+      <td><%= item.price%></td>
+      <td><%= item.status%></td>
+      <td>
+        <form class="profileform">
+            <button class="tradebuttons" type="submit" formmethod="POST" formaction="/items/<%= item.id%>/tradeOffer">TradeOffer</button>
+        </form>
+      </td>
+    <%}%>
+    </tr>
+    <%});%>
+  </table>
+  <br />
+  <%}else{%>
+  <p>You haven't created any items yet.</p>
+  <%};%>
+</div>
+<%- include('../partials/footer.ejs')%>

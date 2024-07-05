@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "645d29a6b03a213f908a7943"
+  },
+  "category": "Men",
+  "title": "Formals",
+  "price": "50$",
+  "size": "Available in all sizes",
+  "details": "Dress to impress with our collection of formal wear, featuring well-fitted suits in classic colors like black, navy blue, and gray, paired with dress shirts, ties, leather shoes, and accessories to create a timeless and polished look for any formal occasion.",
+  "author": {
+    "$oid": "645d27b411228850bc41f61b"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:45:10.505Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:45:10.505Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2a2bb03a213f908a7944"
+  },
+  "category": "Men",
+  "title": "Casuals",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Stay comfortable and stylish with our collection of casual wear, featuring a range of versatile pieces such as jeans, t-shirts, hoodies, and sneakers, that can be mixed and matched to create a laid-back yet put-together look for any casual occasion.",
+  "author": {
+    "$oid": "645d27b411228850bc41f61b"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:47:23.104Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:47:23.104Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2a6ab03a213f908a7945"
+  },
+  "category": "Men",
+  "title": "Jeans",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Shop our collection of jeans, featuring a variety of styles, fits, and washes to choose from. Whether you prefer a classic straight-leg, a trendy slim-fit, or a relaxed bootcut, our denim selection has something for everyone.",
+  "author": {
+    "$oid": "645d27b411228850bc41f61b"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:48:26.809Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:48:26.809Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2ae8b03a213f908a7946"
+  },
+  "category": "Women",
+  "title": "Western Wear",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Discover our western wear collection, featuring a range of stylish and versatile pieces such as denim jackets, cowgirl boots, western dresses, and accessories, to create a classic and edgy look for any occasion, from rodeos to music festivals.",
+  "author": {
+    "$oid": "645d27ca11228850bc41f61c"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:50:32.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:50:32.434Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2b29b03a213f908a7947"
+  },
+  "category": "Women",
+  "title": "Ethnic Wear",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Explore our womens ethnic wear collection, featuring a wide range of traditional and contemporary pieces such as sarees, salwar kameez, lehengas, and kurtis, that celebrate the rich cultural heritage of India and bring a touch of elegance and grace to any festive occasion.",
+  "author": {
+    "$oid": "645d27ca11228850bc41f61c"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:51:37.352Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:51:37.352Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2b67b03a213f908a7948"
+  },
+  "category": "Women",
+  "title": "Jewellery",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Elevate your style with our jewellery collection, featuring a wide range of pieces such as necklaces, earrings, bracelets, and rings, in a variety of styles and materials, from delicate and dainty to bold and statement-making, to add a touch of sparkle and sophistication to any outfit.",
+  "author": {
+    "$oid": "645d27ca11228850bc41f61c"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:52:39.272Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:52:39.272Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2bbcb03a213f908a7949"
+  },
+  "category": "Kids",
+  "title": "Girls Clothing",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Find the perfect outfit for your little princess with our girls clothing collection, featuring a range of stylish and comfortable pieces such as dresses, skirts, tops, and leggings, in a variety of colors, prints, and styles, that are sure to make her look and feel her best.",
+  "author": {
+    "$oid": "645d27e311228850bc41f61d"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:54:04.649Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:54:04.649Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2bedb03a213f908a794a"
+  },
+  "category": "Kids",
+  "title": "Boys Clothing",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Discover our clothing collection, featuring a range of durable and fashionable pieces such as t-shirts, shorts, jeans, and jackets, that are perfect for any adventure, from playing in the backyard to exploring the great outdoors.",
+  "author": {
+    "$oid": "645d27e311228850bc41f61d"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:54:53.710Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:54:53.710Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d2c1fb03a213f908a794b"
+  },
+  "category": "Kids",
+  "title": "Infants",
+  "price": "60$",
+  "size": "Available in all sizes",
+  "details": "Welcome your little bundle of joy with our collection, featuring a range of soft and comfortable pieces such as onesies, rompers, sleepwear, and accessories, that are gentle on their delicate skin and adorable to look at, perfect for cuddling and snuggling.",
+  "author": {
+    "$oid": "645d27e311228850bc41f61d"
+  },
+  "watched": false,
+  "status": "Available",
+  "offertitle": "",
+  "offered": false,
+  "createdAt": {
+    "$date": "2023-05-11T17:55:43.054Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-11T17:55:43.054Z"
+  },
+  "__v": 0
+}]

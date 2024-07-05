@@ -1,0 +1,103 @@
+<%- include('../partials/header.ejs') %>
+<div class="profilecontent">
+    <h2>Welcome, <%= user.firstname %></h2>
+    <% if (items.length) { %>
+        <p>You have created the following items</p>
+        <table class="profiletable">
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <% items.forEach(item => { %>
+                <tr>
+                    <td><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></td>
+                    <td><%= item.category %></td>
+                    <td><%= item.price %></td>
+                    <td><%= item.status %></td>
+                    <td>
+                        <form class="profileform">
+                            <button class="editbuttons" type="submit" formmethod="GET" formaction="/items/<%= item.id %>/editItem">Edit</button>
+                            <button class="deletebuttons" type="submit" formmethod="POST" formaction="/items/<%= item.id %>?_method=DELETE">Delete</button>
+                            <%if(item.status==="Offer Pending"){%>
+                            <button class="tradebuttons" type="submit" formmethod="GET" formaction="/items/<%= item.id%>/manageOffer">ManageOffer</button>
+                            <%}%>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+    <% } else { %>
+        <p>You have not created any items</p>
+    <% } %>
+</div><br>
+<div class="profilecontent1">
+    <h2>You watched</h2>
+<% if(watchs.length != 0) { %>    
+    <table class="profiletable">
+      <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      <% watchs.forEach(watch => { %>
+        <% items_watch.forEach(item => {
+          if (watch.title == item.title) { %>
+            <tr>
+              <td><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></td>
+              <td><%= item.category %></td>
+              <td><%= item.price %></td>
+              <td><%= item.status %></td>
+              <td>
+                <form class="profileform" method="POST" action="/items/<%= item.id %>/unwatch?_method=DELETE">
+                  <button class="tradebuttons" type="submit">Unwatch</button>
+                </form>
+              </td>
+            </tr>
+          <% }
+        });
+        %>
+      <% }); %>
+    </table>
+  <% }else { %>
+    <p>You have not watched any items</p>
+<% } %>
+</div><br> 
+    <div class="profilecontent1">
+    <h2>Your Offers</h2>
+    <%if(offers.length){%> 
+      <table class = "profiletable">
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+        <% offers.forEach(offer => { %>
+            <% items_offer.forEach(item => {
+              if (offer.title == item.title) { %>
+                <tr>
+                  <td><a href="/items/<%= item.id %>"><p><%= item.title %></p></a></td>
+                  <td><p><%= item.category %></td>
+                  <td><p><%= item.price %></td>
+                  <td><p><%= item.status %></td>
+                  <td>
+                    <form class="profileform" method="POST" action="/items/<%= offer.id %>/offer?_method=DELETE">
+                      <button class="tradebuttons" type="submit">Cancel Offer</button>
+                    </form>
+                  </td>
+                </tr>
+              <% }
+            });
+          %>
+          <% }); %>      
+    </table><%}else{%>
+    <p>No Offers!!</p>
+    <%};%>
+    </div>
+<%- include('../partials/footer.ejs') %>

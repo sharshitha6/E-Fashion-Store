@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+    <div class="newformcontent">
+        <form action='/users/signup' method='POST'>
+                <div class="formdiv">
+                   <label for="firstname" class="formlabel">Firstname:</label>&nbsp;
+                   <input type="text" name="firstname" placeholder="firstname" id="firstname" required><br><br>
+                </div>
+                <div class="formdiv">
+                   <label for="lastname" class="formlabel">Lastname:</label>&nbsp;
+                   <input type="text" name="lastname" placeholder="lastname" id="lastname" required><br><br>
+                </div>
+                <div class="formdiv">
+                   <label for="email" class="formlabel">Email Address:</label>&nbsp;
+                   <input type="email" name="email" placeholder="email" id="email" required><br><br>
+                </div>
+                <div class="formdiv">
+                   <label for="password" class="formlabel">Password:</label>&nbsp;
+                   <input type="password" name="password" placeholder="password" id="password" minlength="8" required><br><br>
+                </div>
+                <div class="formdivsignup">
+                    <span><button type = "Submit" class="loginbtn">Signup</button></span>
+                    <span>Member?</span>
+                    <span><a href=/users/login><b>Login</b></a></span>
+                 </div>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs')%>
+    

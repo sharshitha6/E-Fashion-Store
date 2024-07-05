@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs')%>
+<div class="profilecontent2">
+  <h2>Manage Offers</h2>
+  <table class="profiletable">
+    <tr>
+      <th>Offered Item</th>
+      <th>Your Item</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td> <a href="/items/<%= item.id%>"><p><%= item.title%></p></a></td>
+      <td> <a href="/"><p><%= item.offertitle%></p></a></td>
+    <td>
+  <form class="profileform">
+    <button class="editbuttons" type="submit" formmethod="GET" formaction = "/items/<%= item.id%>/acceptOffer">Accept Offer</button>
+    <button class="deletebuttons" type="submit" formmethod="GET" formaction = "/items/<%= item.id%>/rejectOffer">Reject Offer</button>   
+</form>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<%- include('../partials/footer.ejs')%>

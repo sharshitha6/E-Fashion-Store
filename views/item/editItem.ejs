@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs')%>
+    <div class="newformcontent">
+        <form method="POST" action="/items/<%= item.id%>?_method=PUT">
+            <div class="formdiv">
+                <label for="category" class="formlabel">Category</label>
+                <input type="text" name="category" placeholder="Category" id="category" value="<%= item.category%>" required><br><br>
+             </div>
+             <div class="formdiv">
+                <label for="title" class="formlabel">Title</label>
+                <input type="text" name="title" placeholder="title" id="title" value="<%= item.title%>" required><br><br>
+             </div>
+             <div class="formdiv">
+               <label for="price" class="formlabel">Price</label>
+               <input type="text" name="price" placeholder="price" id="price" value="<%= item.price%>" required><br><br>
+            </div>
+            <div class="formdiv">
+              <label for="size" class="formlabel">Size</label>
+              <input type="text" name="size" placeholder="size" id="size" value="<%= item.size%>" required><br><br>
+           </div>
+             <div class="formdiv">
+                <label for="details" class="formlabel">Details</label>
+                <textarea rows = "5" cols = "50" name = "details" placeholder="details" id="details" required minlength="10"><%= item.details%></textarea><br><br>
+             </div>
+             <button type = "submit" class="btncls">Update</button>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs')%>
